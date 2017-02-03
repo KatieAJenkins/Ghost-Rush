@@ -6,10 +6,7 @@ function TownLocation( townObj ) {
   this.name = obj[ "name" ];
   this.photoUrl = obj[ "photo_url" ];
   this.shortDescription = obj[ "short_desc" ];
-  // this.lat = parseFloat( obj[ "latitude" ] );
-  this.lat = obj[ "latitude" ];
-  console.log(this.lat);
-
+  this.lat = parseFloat( obj[ "latitude" ] );
   this.lng = parseFloat( obj[ "longitude" ] );
 }
 

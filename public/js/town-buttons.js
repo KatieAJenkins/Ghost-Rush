@@ -24,17 +24,17 @@ $( document ).ready(
       $.getJSON( validateRoute )
         .done( ( data ) => {
           // if entry exists
-          console.log( "data: ", data );
+          // console.log( "data: ", data );
           const response = data;
           const responseData = response.data
-          console.log( "HERE'S THE RESPONSE: ", response );
+          // console.log( "HERE'S THE RESPONSE: ", response );
           if ( responseData.length > 0 ) {
             // townEntry.toggleVisited
             var townEntry = new UserTownEntry( responseData[ 0 ] );
             var patchRoute = '/user_town_lists/' + townEntry.id;
-            console.log( "townEntry.id: ", townEntry.id );
+            // console.log( "townEntry.id: ", townEntry.id );
             var updatedData = "";
-            console.log( "target", target.id );
+            // console.log( "target", target.id );
             if ( target.is( '#beenThere' ) ) {
               updatedData = townEntry.beenThere();
             }
@@ -44,7 +44,7 @@ $( document ).ready(
             }
             // patch to database
 
-            console.log( "patch route: ", patchRoute );
+            // console.log( "patch route: ", patchRoute );
 
             $.ajax( patchRoute, {
               body: updatedData,
@@ -56,8 +56,8 @@ $( document ).ready(
             return;
           } else {
             var userID = response.userId;
-            console.log( "townID: ", townID );
-            console.log( "userID: ", userID );
+            // console.log( "townID: ", townID );
+            // console.log( "userID: ", userID );
             var townEntryRequest = new NewUserTownEntry( townID, userID );
             // if event target = #beenThere
             var myData = "";
@@ -92,17 +92,17 @@ $( document ).ready(
     }
 
     function NewUserTownEntry( townID, usersID ) {
-      console.log( "CREATING newUserTownEntry" );
+      // console.log( "CREATING newUserTownEntry" );
       this.towns_id = townID;
       this.users_id = usersID;
       // this.visited = false;
       this.visited = true;
-      console.log( "VISITED: ", this.visited );
+      // console.log( "VISITED: ", this.visited );
     }
 
 
     NewUserTownEntry.prototype.beenThere = function() {
-      console.log( "ABOUT TO SET VISITED" );
+      // console.log( "ABOUT TO SET VISITED" );
       this.visited = true;
       return {
         "towns_id": this.towns_id,
@@ -111,8 +111,8 @@ $( document ).ready(
       };
     };
     NewUserTownEntry.prototype.wantToGo = function() {
-      console.log( "THIS in Want to Go: ", this );
-      console.log( "this.visited: ", this.visited );
+      // console.log( "THIS in Want to Go: ", this );
+      // console.log( "this.visited: ", this.visited );
       this.visited = false;
 
       return {
@@ -130,7 +130,7 @@ $( document ).ready(
       this.visited = obj[ "visited" ];
     }
     UserTownEntry.prototype.beenThere = function() {
-      console.log( "ABOUT TO SET VISITED" );
+      // console.log( "ABOUT TO SET VISITED" );
       this.visited = true;
       return {
         "id": this.id,
@@ -140,8 +140,8 @@ $( document ).ready(
       };
     };
     UserTownEntry.prototype.wantToGo = function() {
-      console.log( "THIS in Want to Go: ", this );
-      console.log( "this.visited: ", this.visited );
+      // console.log( "THIS in Want to Go: ", this );
+      // console.log( "this.visited: ", this.visited );
       this.visited = false;
 
       return {
