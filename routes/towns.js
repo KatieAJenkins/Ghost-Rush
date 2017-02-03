@@ -1,5 +1,3 @@
-//TODO://Post (photos/comments STRETCH)
-
 'use strict';
 
 const boom = require('boom');
@@ -7,7 +5,7 @@ const express = require('express');
 const knex = require('../knex');
 const router = express.Router();
 
-//this route gets a list of all towns
+//GET list of all towns
 router.get('/towns', (req, res, next) => {
     knex('towns')
         .orderBy('id')
@@ -20,7 +18,7 @@ router.get('/towns', (req, res, next) => {
         }));
 });
 
-//this route gets any town by id
+//GET list of all towns by id
 router.get('/towns/:id', (req, res, next) => {
     const id = Number.parseInt(req.params.id);
 

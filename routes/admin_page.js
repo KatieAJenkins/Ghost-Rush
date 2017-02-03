@@ -1,6 +1,5 @@
 'use strict';
 
-
 const bcrypt = require('bcrypt-as-promised');
 const boom = require('boom');
 const express = require('express');
@@ -50,7 +49,5 @@ router.delete('/users/:id',(req, res, next) => {
             });
         });
 });
-
-
 
 module.exports = router;

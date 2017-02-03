@@ -13,7 +13,6 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 
-
 switch (app.get('env')) {
     case 'development':
         app.use(morgan('dev'));
@@ -27,7 +26,7 @@ switch (app.get('env')) {
 }
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(cookieParser());
 
@@ -43,7 +42,6 @@ const admin_page = require('./routes/admin_page');
 
 app.use(express.static('./public'));
 
-
 app.use(users);
 app.use(auth);
 app.use(towns);
@@ -53,8 +51,6 @@ app.use('/admin_page', admin_page);
 app.use((_req, res) => {
     res.sendStatus(404);
 });
-
-
 
 app.use((err, _req, res, _next) => {
     if (err.output && err.output.statusCode) {

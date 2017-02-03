@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken');
 const knex = require('../knex');
 const router = express.Router();
 
-
 //login route!
 router.post('/auth', (req, res, next) => {
     const {
@@ -72,6 +71,5 @@ router.delete('/auth/:id', (req, res) => {
   res.clearCookie('token');
   res.send(true);
 });
-
 
 module.exports = router;
