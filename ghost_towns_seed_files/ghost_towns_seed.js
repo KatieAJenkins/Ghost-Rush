@@ -137,31 +137,7 @@ exports.seed = function(knex, Promise) {
                     longitude: -105.512776,
                     latitude: 39.989987
                 }),
-                knex('towns').insert({
-                    id: 11,
-                    name: "MatVille",
-                    yr_est: 1843,
-                    yr_abnd: 'Still Alive',
-                    description_then: "Ancient as the gold the town was built.",
-                    description_now: "Aging gracefully",
-                    cemetery: 'No',
-                    mineral_found: 'Gold',
-                    tour_avail: false,
-                    longitude: -105.270546,
-                    latitude: 40.014986
-                }),
-                knex('towns').insert({
-                    id: 12,
-                    name: "Teddi Town",
-                    yr_est: 1820,
-                    yr_abnd: 'Still Alive',
-                    description_then: "Silver veins were plentiful!",
-                    description_now: "A few old buildings and things. Silver is long gone.",
-                    cemetery: 'Yes',
-                    mineral_found: 'Silver',
-                    tour_avail: false,
-                    longitude: -104.971924,
-                    latitude: 39.868041
+//insert more ghost towns here!
                 })
             ]);
         })
