@@ -25,13 +25,13 @@ function init() {
       this.id = obj["id"];
       this.townPhoto = obj["photo_url"];
       this.townName = obj["name"];
-      // this.latlon = (parseFloat(obj["latitude"]) + ", " + parseFloat(obj["longitude"])).toString();
-      // this.latlon = obj["latitude"] + ", " + obj["longitude"].toString();
-      this.latlon = obj["latitude"] + ", " + obj["longitude"];
-      console.log(this.latlon);
+      this.latlon = (parseFloat(obj["latitude"]) + ", " + parseFloat(obj["longitude"])).toString();
+      this.latlon = obj["latitude"] + ", " + obj["longitude"].toString();
+      // this.latlon = obj["latitude"] + ", " + obj["longitude"];
+      // console.log(this.latlon);
 
-      // this.lat = parseFloat(obj["latitude"]);
-      // this.lng = parseFloat(obj["longitude"]);
+      this.lat = parseFloat(obj["latitude"]);
+      this.lng = parseFloat(obj["longitude"]);
       this.townCemetery = obj["cemetery"];
       this.townEst = obj["yr_est"];
       this.townAbandon = obj["yr_abnd"];
