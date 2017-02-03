@@ -12,8 +12,8 @@ exports.up = function(knex, Promise) {
     table.string('cemetery').defaultTo('');
     table.text('mineral_found').defaultTo('');
     table.string('tour_avail');
-    table.decimal('longitude');
-    table.decimal('latitude');
+    table.decimal('longitude' , 8, 4);
+    table.decimal('latitude' , 8, 4);
   });
 };
 
