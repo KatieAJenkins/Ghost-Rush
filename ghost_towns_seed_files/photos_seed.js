@@ -45,14 +45,6 @@ exports.seed = function(knex, Promise) {
                 knex('photos').insert({
                     id: 10,
                     photo_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/CaribouCO-2005.jpg/220px-CaribouCO-2005.jpg'
-                }),
-                knex('photos').insert({
-                    id: 11,
-                    photo_url: 'http://i.imgur.com/M5kL71b.jpg'
-                }),
-                knex('photos').insert({
-                    id: 12,
-                    photo_url: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCaUz-6a0UIrjL3lQM4POBV4PJATxYruDg7R46szGGSOZnLLb7Kw'
                 })
             ]);
         })

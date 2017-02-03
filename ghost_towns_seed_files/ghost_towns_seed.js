@@ -128,17 +128,15 @@ exports.seed = function(knex, Promise) {
                     name: "Caribou",
                     yr_est: 1869,
                     yr_abnd: 1944,
-                    description_then: "Produced over $8 million in silver before closing leading to Colorado being called "
-                    The Silver State ". President Grant once vsited and his pathway was lined with 70 silver bricks.",
+                    description_then: 'Produced over $8 million in silver before closing leading to Colorado being called "The Silver State". President Grant once visited and his pathway was lined with 70 silver bricks.',
                     description_now: "Most of the town was destroyed it's 2nd fire in 1899. Sherman House hotel remains, a cabin, and gravestones remain.",
                     cemetery: 'Yes',
                     mineral_found: 'Silver',
                     tour_avail: false,
                     longitude: -105.512776,
                     latitude: 39.989987
-                }),
-//insert more ghost towns here!
                 })
+//insert more ghost towns here!
             ]);
         })
         .then(() => {
