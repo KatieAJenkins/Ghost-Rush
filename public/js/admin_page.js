@@ -3,7 +3,6 @@
 (function () {
   console.log("I'm ready at admin_page.js!");
 
-
   function AdminList(users) {
     const obj = users;
     this.id = obj["id"];
@@ -21,7 +20,6 @@
       .fail(function(err) {
           console.log(err);
       });
-
 
   AdminList.prototype.populateRow = function populateRow() {
     var id = "<td>" + this.id + "</td>";

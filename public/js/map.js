@@ -34,6 +34,7 @@ function init() {
                     '<p>' + this.shortDescription + '</p>' +
                     '<img class="markerInfoPhoto" src = "' + this.photoUrl + '"</div>' + '</div>' + '</div>');
             };
+
             TownLocation.prototype.position = function() {
                 var newLat = {
                     lat: this.lat
@@ -49,12 +50,12 @@ function init() {
                     var locations = towns;
                     locations.map(renderMarkerWithWindow);
                 });
+
             //render markers and info windows
             function renderMarkerWithWindow(obj) {
                 var newTown = new TownLocation(obj);
                 var content = newTown.contentString();
                 var position = newTown.position();
-                // var name = newTown.name;
                 var marker = new google.maps.Marker({
                     position: position,
                     map: map,

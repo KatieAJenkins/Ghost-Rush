@@ -55,5 +55,4 @@
                 Materialize.toast($xhr.responseText, 3000);
             });
     });
-
 })();

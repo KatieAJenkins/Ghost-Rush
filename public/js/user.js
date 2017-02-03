@@ -22,6 +22,7 @@ $( 'document' ).ready( function() {
     this.townShortDesc = obj[ "short_desc" ];
     console.log( "I'm getting to line 25" );
   }
+  
   UserTownWant.prototype.populateCard = function populateCard() {
     var townPhoto = "<div class='col s3'>" + "<div class='card small'>" + "<div class='card-image'>" + "<img src= '" + this.townPhoto + "' alt= '" + this.townName + "' class='responsive-img imageSizing'>";
     var townName = "<span class='card-title center-align'>" + this.townName + "</span>" + "</div>";
@@ -59,6 +60,7 @@ $( 'document' ).ready( function() {
     this.townShortDesc = obj[ "short_desc" ];
     console.log( "I'm getting to line 25" );
   }
+
   UserTownBeen.prototype.populateCard = function populateCard() {
     var townPhoto = "<div class='col s3'>" + "<div class='card small'>" + "<div class='card-image'>" + "<img src= '" + this.townPhoto + "' alt= '" + this.townName + "' class='responsive-img imageSizing'>";
     var townName = "<span class='card-title center-align'>" + this.townName + "</span>" + "</div>";
@@ -72,9 +74,6 @@ $( 'document' ).ready( function() {
     var newCard = new UserTownBeen( obj );
     newCard.populateCard();
   }
-
-
-
 
   // ====Javascript rendering for info box====
   $.getJSON( '/users/getid' )
@@ -95,6 +94,7 @@ $( 'document' ).ready( function() {
     this.location_state = obj[ "location_state" ];
     console.log( obj );
   }
+
   // render to user info box
   UserInfo.prototype.populateInfoBox = function populateInfoBox() {
     const html = "<p class='center-align'>" + this.username + "</p>" + "<p class='center-align'>" + this.location_city + "</p>" + "<p class'center-align'>" + this.location_state + "</p>";
@@ -106,6 +106,4 @@ $( 'document' ).ready( function() {
     var newUser = new UserInfo( obj );
     newUser.populateInfoBox();
   }
-
-  // })
-} );
+});

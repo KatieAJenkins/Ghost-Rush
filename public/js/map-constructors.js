@@ -19,6 +19,7 @@ TownLocation.prototype.contentString = function() {
     '<p>' + this.shortDescription + '</p>' +
     '<img class="markerInfoPhoto" src = "' + this.photoUrl + '"</div>' + '</div>' + '</div>' );
 };
+
 TownLocation.prototype.position = function() {
   var newLat = {
     lat: this.lat
