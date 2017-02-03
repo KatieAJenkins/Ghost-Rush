@@ -27,9 +27,6 @@ function init() {
       this.townName = obj["name"];
       this.latlon = (parseFloat(obj["latitude"]) + ", " + parseFloat(obj["longitude"])).toString();
       this.latlon = obj["latitude"] + ", " + obj["longitude"].toString();
-      // this.latlon = obj["latitude"] + ", " + obj["longitude"];
-      // console.log(this.latlon);
-
       this.lat = parseFloat(obj["latitude"]);
       this.lng = parseFloat(obj["longitude"]);
       this.townCemetery = obj["cemetery"];
