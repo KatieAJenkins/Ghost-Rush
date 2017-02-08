@@ -4,7 +4,7 @@
 
 ![ghost_rush_homepage](https://github.com/KatieAJenkins/ghost_rush/blob/master/ghost_rush_screenshots/ghost_rush_homepage.png "Ghost Rush Homepage")
 
-<p>First, sign up. Then, log in to see a Google map of all the ghost towns available to explore in the database.</p>
+<p>First, sign up! Then, log in to see a Google map of all the ghost towns available to explore in the database.</p>
 
 ![ghost_rush_detailedmap](https://github.com/KatieAJenkins/ghost_rush/blob/master/ghost_rush_screenshots/ghost_rush_detailedmappage.png "Detailed Map Page")
 
