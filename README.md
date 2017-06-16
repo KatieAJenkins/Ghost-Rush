@@ -1,4 +1,4 @@
-#Ghost Rush
+# Ghost Rush
 
 [Ghost Rush](https://ghost-rush.herokuapp.com/) is an application that encourages you to learn about Colorado’s rich history through visiting and exploring ghost towns.</p>
 
