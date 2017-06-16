@@ -22,8 +22,8 @@
 
 Thank you to my team members who helped bring this ghostly idea to life! 
 * [Olivia Hendrick](https://github.com/ohendrick1223)
-* [Olivia Ridgley] (https://github.com/oliviaridgley)
-* [Heidi Rodriguez] (https://github.com/hrod28)
-* [Justyna Foster] (https://github.com/SoleNero)
-* [Laura Baukol] (https://github.com/laura333)
-* [Ari Clark] (https://github.com/gloomylumi)
+* [Olivia Ridgley](https://github.com/oliviaridgley)
+* [Heidi Rodriguez](https://github.com/hrod28)
+* [Justyna Foster](https://github.com/SoleNero)
+* [Laura Baukol](https://github.com/laura333)
+* [Ari Clark](https://github.com/gloomylumi)
